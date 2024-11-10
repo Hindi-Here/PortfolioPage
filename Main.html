@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Сайт-портфолио Гринкина Вадима Николаевича">
+    <meta name="keywords" content="Портфолио, Гринкин В.Н.">
+    <link rel="icon" href="picture/resource/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/block.css" type="text/css"> 
+    <link rel="stylesheet" href="css/adaptive_MainPage.css" type="text/css">
+    <link rel="stylesheet" href="css/adaptive_PanelsMainPage.css" type="text/css">
+    <link rel="stylesheet" href="css/adaptive_WorkExamplePages.css" type="text/css">
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/script.js"></script>
+    
+<title>Гринкин В.Н.</title>
+</head>
+<body>
+
+    <!-- HEADER CONTENT -->
+    <header>
+        <div class="headerBLOCK" id="panel1" onclick="Main_Click()">
+            <p class="headerTEXT"> Главная </p>
+        </div>
+        <div class="headerBLOCK" id="panel2" onclick="MyWork_Click()">
+            <p class="headerTEXT"> Мои работы </p>
+        </div>
+        <div class="headerBLOCK" id="panel3" onclick="aboutMe_Click()">
+            <p class="headerTEXT"> Обо мне </p>
+        </div>
+        <div class="headerBLOCK" id="panel4" onclick="messageMe_Click()">
+            <p class="headerTEXT"> Связь со мной </p>
+        </div>
+        
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="column-body" onclick="OutZone_Click()">
+        <div class="telegram">
+            <a href="https://t.me/clubNEDO" target="_blank">
+            <img class="telegram-image" src="picture/resource/tg_icon.png">
+            </a>
+        </div>
+
+        <div class="github">
+            <a href="https://github.com/Hindi-Here?tab=repositories" target="_blank">
+            <img class="github-image" src="picture/resource/github_icon.png"> 
+            </a>
+        </div>
+
+        <div class="youtube">
+            <a href="https://www.youtube.com/channel/UCln9Bj6FjWe9i-Z7MYBlx4g" target="_blank">
+            <img class="youtube-image" src="picture/resource/youtube_icon.png">
+            </a>
+        </div>
+    </div>
+    
+    <!-- MyWork CONTENT -->
+
+    <div class="programs-page content" onclick="OutZone_Click()">
+
+        <div class="page-allBlock">
+            <div class="page-block" src="https://github.com/Hindi-Here/StudentDoc-Builder">
+                <p class="page-block-title"> StudentDoc-Builder </p>
+                <img class="page-block-image" src="picture/programs/1.png"/> 
+                <p class="page-block-description"> Программа на Avalonia для формирования Word файлов с отчетностью успеваемости студентов </p>
+            </div>
+
+            <div class="page-block" src="https://github.com/Hindi-Here/TapTapTap">
+                <p class="page-block-title"> TapTapTap </p>
+                <img class="page-block-image" src="picture/programs/2.png"/> 
+                <p class="page-block-description"> Небольшая мини-игра в браузере, целью которой является попасть по максимально возможному количеству появляющихся объектов </p>
+            </div>
+
+            <div class="page-block" src="https://github.com/Hindi-Here/FindYourTeacher">
+                <p class="page-block-title"> FindYourTeacher </p>
+                <img class="page-block-image" src="picture/programs/3.png"/> 
+                <p class="page-block-description"> Бот для поиска аудиторий по ФИО преподавателя [для забывчивых студентов и задолжников] </p>
+            </div>
+
+            <div class="page-block" src="https://github.com/Hindi-Here/HangMan">
+                <p class="page-block-title"> HangMan </p>
+                <img class="page-block-image" src="picture/programs/4.png"/> 
+                <p class="page-block-description"> Обыденная игра "Виселица" на приложении WPF с двумя режимами игры </p>
+            </div>
+
+            <div class="page-block" src="https://github.com/Hindi-Here/Web_Parser">
+                <p class="page-block-title"> Web Parser </p>
+                <img class="page-block-image" src="picture/programs/5.png"/> 
+                <p class="page-block-description"> Небольшой парсер, который содержит в себе несколько функций для парсинга разных web-страниц. Не применяем для сложных задач или на сайтах с авторизацией и шифрованием html кода </p>
+            </div>
+
+            <div class="page-block" src="https://github.com/Hindi-Here/System_Convert">
+                <p class="page-block-title"> System Convert </p>
+                <img class="page-block-image" src="picture/programs/6.png"/> 
+                <p class="page-block-description"> Программа для перевода одной системы счисления в другую (стандартный набор перевода с 2 - 16). Отсутствует поддержка перевода отрицательных и дробных чисел </p>
+            </div>
+
+            <div class="page-block" src="https://github.com/Hindi-Here/MySecretCode">
+                <p class="page-block-title"> My Secret Code </p>
+                <img class="page-block-image" src="picture/programs/7.png"/> 
+                <p class="page-block-description"> Программа шифратор-дешифратор. Имеет функционал создания собственного символьного алфавита с нуля. Созданный алфавит также можно редактировать </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="videos-page content" onclick="OutZone_Click()">
+
+        <div class="page-allBlock">
+            <div class="page-block" src="https://youtu.be/LDSu2oQfc04">
+                <p class="page-block-title"> Painkiller </p>
+                <iframe class="page-block-image" src="https://www.youtube.com/embed/LDSu2oQfc04?rel=0" allowfullscreen></iframe>
+                <p class="page-block-description"></p>
+            </div>
+            <div class="page-block" src="https://youtu.be/_6iQWGGPgNY">
+                <p class="page-block-title"> Bear Party: Adventure </p>
+                <iframe class="page-block-image" src="https://www.youtube.com/embed/_6iQWGGPgNY?rel=0" allowfullscreen></iframe> 
+                <p class="page-block-description"></p>
+            </div>
+            <div class="page-block" src="https://youtu.be/b_c-FwenV-o">
+                <p class="page-block-title"> Robolife2 </p>
+                <iframe class="page-block-image" src="https://www.youtube.com/embed/b_c-FwenV-o?rel=0" allowfullscreen></iframe> 
+                <p class="page-block-description"></p>
+            </div>
+            <div class="page-block" src="https://youtu.be/Ut099TMe7ag">
+                <p class="page-block-title"> Rhythm Games Mix </p>
+                <iframe class="page-block-image" src="https://www.youtube.com/embed/Ut099TMe7ag?rel=0" allowfullscreen></iframe> 
+                <p class="page-block-description"></p>
+            </div>
+            <div class="page-block" src="https://youtu.be/yr0NJs1optA">
+                <p class="page-block-title"> Gensin Impact </p>
+                <iframe class="page-block-image" src="https://www.youtube.com/embed/yr0NJs1optA?rel=0" allowfullscreen></iframe> 
+                <p class="page-block-description"></p>
+            </div>
+            <div class="page-block" src="https://youtu.be/aEGCEl0rPGo">
+                <p class="page-block-title"> Counter Strike: Global Offensive </p>
+                <iframe class="page-block-image" src="https://www.youtube.com/embed/aEGCEl0rPGo?rel=0" allowfullscreen></iframe> 
+                <p class="page-block-description"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- header bar -->
+    <!-- panel 2 -->
+    <div class="MyWork panel">
+        <div class="MyWork-block" onclick="programs_work()"> <p class="MyWork-text"> Программы </p> </div>
+        <div class="MyWork-block" onclick="video_work()"> <p class="MyWork-text"> Видео </p> </div>
+    </div>
+
+    <!-- panel 3 -->
+    <div class="AboutMe panel">
+        <img src="picture/resource/photo.png" class="AboutMe-image">
+        <p class="AboutMe-text"> 
+            <b>ФИО:</b> Гринкин Вадим Николаевич <br>
+            <b>Возраст:</b> 22 года <br>
+            <b>Дата рождения:</b> 14.01.2002 <br>
+            <b>Образование:</b> СПО (С отличием) <br>
+            <b>Военный билет:</b> в наличии <br>
+
+            <b>Проф. навыки:</b>
+            <span id="skill-panel"> программирование [С#, C++] </span> 
+            <span id="skill-panel">  SQL </span> <br>
+            <span id="skill-panel"> веб [html5, css, js] </span>
+            <span id="skill-panel">  офисные редакторы [Word, Access, Excel, ...] </span>
+            <span id="skill-panel">  видеомонтаж </span>
+            <span id="skill-panel">  растровая графика [Photoshop, Stable Diffusion] </span>
+        </p>
+    </div>
+
+    <!-- panel 4 -->
+    <div class="messageMe panel">
+        <div class="messageMe-block"> <p class="messageMe-text-none"> +7(918)-482-00-03 </p> </div>
+            <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new" target="_blank"> 
+                <div class="messageMe-block"> <p class="messageMe-text"> pechenka28f@gmail.com </p> </div>
+            </a>
+            <a href="https://discordapp.com/users/531549462472949785" target="_blank">
+                <div class="messageMe-block"> <p class="messageMe-text"> My Discord </p> </div>
+            </a>
+            <a href="https://vk.com/negative_yes" target="_blank">
+                <div class="messageMe-block"> <p class="messageMe-text"> My Vkontakte </p> </div>
+            </a>
+            <a href="https://t.me/+QOw_it4vnG9kOTgy" target="_blank">
+                <div class="messageMe-block"> <p class="messageMe-text"> My Telegram </p> </div>
+            </a>
+        </div>
+
+    <!-- Dark mode -->
+    <div class="dark-preview content">
+        <div class="dark-preview-block">
+            <img class="dark-preview-image">
+        </div>
+    </div>
+
+    <!-- FOOTER CONTENT -->
+    <footer onclick="OutZone_Click()">
+        <p class="footerTEXT"> Самый несчастный человек — это тот, для кого в мире не нашлось работы </p>
+        <p class="footerTEXT2"> • Томас Карлейль </p>
+    </footer>
+</body>
+</html>

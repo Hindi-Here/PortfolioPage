@@ -1,0 +1,270 @@
+body{
+    margin: 0%;
+    background:linear-gradient(to right, rgb(70, 70, 70), rgb(30, 30, 30));
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/* header css */
+header{
+    width: 100%;
+    height:65px;
+    background-color: rgb(30, 30, 30);
+    border-bottom: 2px solid rgb(150, 150, 150);
+    display: grid;
+    grid-template-columns:15% 15% 15% 15%;
+}
+.headerBLOCK{
+    border-right: 1px solid rgb(90, 90, 90);
+    transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
+}
+.headerBLOCK:hover{
+    background-color: rgb(45, 45, 45);
+    border-bottom: 2px solid rgb(253, 255, 129);
+    box-shadow: 0 6px 2px -2px rgba(253, 255, 129, 0.5);
+    box-shadow: inset 0 0 5px 2px rgba(253, 255, 129, 0.1);
+}
+.headerTEXT{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    overflow:hidden;
+}
+.headerTEXT:hover{
+    animation: text-color 1s ease forwards;
+}
+
+@keyframes text-color {
+    0% { color: #ffffff; }
+    100% { color: rgb(253, 255, 129); }
+}
+
+/* header-bar [2 panel]*/
+.MyWork{
+    width: 15%;
+    position: absolute;
+    left: 14.85%;
+    top: 66px;
+    background-color: rgb(30, 30, 30);
+    border: 2px solid rgb(150, 150, 150);
+    box-shadow: 5px 5px 10px black;
+    display: none;
+}
+
+/* header-bar [3 panel]*/
+.AboutMe{
+    width: 770px;
+    position: absolute;
+    left: 29.85%;
+    top: 66px;
+    background-color: rgb(30, 30, 30);
+    border: 2px solid rgb(150, 150, 150);
+    box-shadow: 5px 5px 10px black;
+    display: none;
+}
+.AboutMe-image{
+    width: 175px;
+    height: 175px;
+    float: left;
+    margin: 5% 3% 0 3%;
+    border: 2px solid rgb(185, 185, 185);
+}
+.AboutMe-text{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 3%;
+    line-height: 36px;
+    opacity: 0.85;
+}
+#skill-panel{
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    margin-left: 2%;
+    padding: 2px;
+    background-color: rgb(200, 200, 200);
+    transition: background-color 0.3s, color 0.3s;
+}
+#skill-panel:hover {
+    background-color: rgb(185, 185, 185);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* header-bar [4 panel]*/
+.messageMe{   
+    width: 15%;
+    position: absolute;
+    left: 44.85%;
+    top: 66px;
+    background-color: rgb(30, 30, 30);
+    border: 2px solid rgb(150, 150, 150);
+    box-shadow: 5px 5px 10px black;
+    display: none;
+}
+
+.messageMe-block, .MyWork-block{ 
+    height: 30px;
+    border-bottom: 2px solid rgb(62, 62, 62);
+    transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
+}
+.messageMe-block:hover, .MyWork-block:hover{ 
+    border-bottom: 2px solid rgb(253, 255, 129);
+    box-shadow: 0 6px 2px -2px rgba(253, 255, 129, 0.5);
+}
+
+.messageMe-text, .messageMe-text-none, .MyWork-text{ 
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    opacity: 0.8;
+}
+.messageMe-text:hover, .MyWork-text:hover{
+    opacity: 1;
+    animation: text-color 1s ease forwards;
+}
+
+/* body-content css */
+.column-body{
+    display: grid;
+    grid-template-columns:33% 34% 33%;
+    height: 560px;
+}
+.telegram-image, .github-image, .youtube-image{
+    height: 335px;
+    margin: 20% 0 0 22%;
+    filter: grayscale(50%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.telegram:hover, .github:hover, .youtube:hover{
+    background-color: rgb(60, 60, 60);
+}
+
+.github-image{
+    height: 370px;
+    margin: 17% 0 0 18%;
+}
+
+.telegram-image:hover{
+    transform: rotate(-7deg);
+    filter: grayscale(20%);
+}
+.github-image:hover{
+    transform: translateY(10px);
+    filter: grayscale(20%);
+    filter: contrast(80%);
+}
+.youtube-image:hover{
+    transform: rotate(7deg);
+    filter: grayscale(20%);
+}
+
+@keyframes discraption-text-animation{
+    0%{opacity: 0;}
+    100% {opacity: 0.7;}
+}
+
+/* page works css */
+.programs-page, .videos-page {
+    display: none;
+}
+
+.page-allBlock {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.page-block, .s-page-block{
+    margin: 10px 0 10px 0;
+}
+.page-block:hover, .s-page-block:hover{
+    background-color: rgb(60, 60, 60);
+    transform: scale(1.01); 
+    transition: transform 0.3s ease; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.page-block-image{
+    margin-left: 25px;
+    height: 250px;
+    width: 400px;
+    border: 3px solid rgb(150, 150, 150);
+    border-radius: 10px;
+}
+.page-block-image:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+
+.page-block-title, .page-block-description{
+    font-family: Roboto, Garamond, sans-serif;
+    color: white;
+    font-size: 22px; 
+    margin: 15px 10px 15px 25px;
+}
+.page-block-title{
+    font-weight: bold;
+}
+.page-block-description{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* dark-preview css */
+.dark-preview{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.505);   
+}
+.dark-preview-block{
+    width: 950px;
+    height: 600px;
+    margin: 75px auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+}
+.dark-preview-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* footer css */
+footer{
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    border-top: 2px solid rgb(150, 150, 150);
+    height: 110px;
+}
+.footerTEXT{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 23px;
+    color: white;
+    text-align:center;
+}
+.footerTEXT2{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align:center;
+}
+
+/* scroll setting */
+::-webkit-scrollbar{width: 15px;}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(100, 100, 100);  
+    border-radius: 20px;      
+    border: 3px solid rgba(0, 0, 0, 0.333); 
+  }

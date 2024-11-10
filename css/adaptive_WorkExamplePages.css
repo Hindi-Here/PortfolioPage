@@ -1,0 +1,26 @@
+@media screen and (max-width: 1300px){
+    .page-allBlock{
+        grid-template-columns:50% 50%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .page-allBlock{
+        grid-template-columns:100%;
+        text-align: center;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .page-allBlock{
+        text-align: left;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .page-allBlock{
+        margin-left: 1%;
+    }
+}

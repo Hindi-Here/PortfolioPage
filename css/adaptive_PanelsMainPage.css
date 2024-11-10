@@ -1,0 +1,83 @@
+/* header-bar 3 panel */
+@media screen and (max-width: 1100px){
+    .AboutMe{
+        left: 0%;
+    }
+}
+@media screen and (max-width: 800px){
+    .AboutMe{
+        width: 570px;
+    }
+    .AboutMe-image{
+        width: 125px;
+        height: 125px;
+        margin: 3% 3% 0 3%;
+    }
+    .AboutMe-text{
+        font-size: 15px;
+        line-height: 30px;   
+    }
+}
+@media screen and (max-width: 600px){
+    .AboutMe{   
+        top: 101px;
+        }
+    }
+@media screen and (max-width: 530px){
+    .AboutMe{
+        width: 470px;
+    }
+}
+
+/* header-bar 2 && 4 panel */
+@media screen and (max-width: 1200px){
+    .messageMe-text, .messageMe-text-none,.MyWork-text{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .messageMe{
+        width: 20%;
+        left: 59.8%;
+        top: 66px;
+    }
+    .MyWork{
+        width: 20%;
+        left: 19.8%;
+    }
+}
+@media screen and (max-width: 850px){
+    .messageMe-text, .messageMe-text-none,.MyWork-text{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 750px){
+    .messageMe{
+        width: 25%;
+        left: 74.8%;
+        top: 66px;
+    }
+    .MyWork{
+        width: 25%;
+        left: 24.8%;
+    }
+}
+@media screen and (max-width: 500px){
+    .MyWork{
+        width: 50%;
+        left: 49.8%;
+    }
+}
+@media screen and (max-width: 620px){
+    .messageMe-text, .messageMe-text-none,.MyWork-text{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px){
+.messageMe, .MyWork{   
+    top: 101px;
+    }
+}
+.messageMe-block, .MyWork-block{
+    height: 25px;
+}
